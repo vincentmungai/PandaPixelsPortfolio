@@ -1,0 +1,46 @@
+.btn {
+    cursor: pointer;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    margin: 1em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    border: none;
+    color: #fff;
+    border-radius: 0;
+    background-color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    border: 1px solid black;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid black;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn2 {
+    
+    cursor: pointer;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 1em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    border: none;
+    color: #000;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 0;
+    
+    
+    transition: background-color 0.5s ease-in-out;
+}
+
+.btn2:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
