@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Fonts start here-->
+
+    <!--Garamond font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+    <!--Fonts End here-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--Media Query-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--stylesheet-->
+    <link rel="stylesheet" href="stylesheet/nav-bar.css" />
+    <link rel="stylesheet" href="stylesheet/gallery-sub-page-styles.css" />
+    <!-- title Icon -->
+    <link rel="icon" href="stylesheet/images/header-icon.png" type="image/png" />
+    <!-- title Icon -->
+    <!-- view transitions -->
+    <meta name="view-transition" content="same-origin" />
+    <!-- view transitions -->
+
+    <!-- Meta Description -->
+    <meta name="description" content="Embark on a visual journey with our Landscapes and Travel gallery. Immerse yourself in breathtaking vistas, exotic destinations, and the beauty of our planet captured through the lens. Explore our curated collection of landscape and travel photography, where every image tells a story of exploration and awe. Let our gallery transport you to incredible places and inspire your wanderlust. Discover the world through our lens and experience the art of travel photography."
+    />
+
+    <!-- Meta Description -->
+    <title>Panda Pixels</title>
+</head>
+
+<body>
+    
+
+    <!--navigation-bar integration-->
+
+    <!-- Gallery integration -->
+    <div class="section-title">
+        Landscapes <br /> & <br /> Travel
+    </div>
+    <div class="row">
+        <div class="thumbnail">
+            <img src="stylesheet/images/Landscapes-&-Travel/sectiton-cover.JPG" alt="Image 1" class="img-fluid" data-toggle="modal" data-target="#myModal" />
+        </div>
+
+        <div class="thumbnail">
+            <img src="stylesheet/images/Landscapes-&-Travel/DSC00611.JPG" alt="Image 2" class="img-fluid" data-toggle="modal" data-target="#myModal" />
+        </div>
+
+        <div class="thumbnail">
+            <img src="stylesheet/images/Landscapes-&-Travel/DSC00632-Edit.JPG" alt="Image 3" class="img-fluid" data-toggle="modal" data-target="#myModal" />
+        </div>
+
+        <div class="thumbnail">
+            <img src="stylesheet/images/Landscapes-&-Travel/DSC04896.jpg" alt="Image 3" class="img-fluid" data-toggle="modal" data-target="#myModal" />
+        </div>
+        <div class="thumbnail">
+            <img src="stylesheet/images/Landscapes-&-Travel/DSC00584.JPG" alt="Image 3" class="img-fluid" data-toggle="modal" data-target="#myModal" />
+        </div>
+
+        <!-- Add more gallery items as needed -->
+    </div>
+
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                </div>
+                <div class="modal-body">
+                    <img src="" alt="Modal Image" id="modalImage" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        // Update modal image source on thumbnail click
+        $(".thumbnail img").on("click", function() {
+            $("#modalImage").attr("src", $(this).attr("src"));
+        });
+    </script>
+    <!-- Gallery integration -->
+</body>
+
+</html>
